@@ -1,0 +1,80 @@
+GET  http://localhost:3000/api/series
+
+###
+POST http://localhost:3000/api/movies
+Content-Type: application/json
+
+{
+    "title": "Hannibal",
+    "genre": "Horror",
+    "cover": "https://www.google.com/search?q=hannibal+movie&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiR3J6V3J3iAhXQrJ4KHV5eD8QQ_AUIEigB&biw=1366&bih=657#imgrc=",
+    "duration": "2h 11m",
+    "rating": 5
+
+}
+
+
+###
+
+POST http://localhost:3000/api/series
+Content-Type: application/json
+
+{
+    "title": "The Office",
+    "genre": "Comedy",
+    "cover": "https://www.google.com/search?q=the+office+tv+show&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiR3J6V3J3iAhXQrJ4KHV5eD8QQ_AUIEigB&biw=1366&bih=657#imgrc=",
+    "seasons": 9,
+    "episodes": 201,
+    "rating": 5
+    
+}
+
+
+###
+PUT http://localhost:3000/api/series/id/7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "The Office",
+    "genre": "Comedy",
+    "cover": "https://ntvb.tmsimg.com/assets/p7893514_b_h8_ab.jpg?w=960&h=540",
+    "seasons": 9,
+    "episodes": 201,
+    "rating": 5
+    
+}
+
+###
+
+PATCH  http://localhost:3000/api/series/id/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "rating": 10
+}
+
+###
+
+DELETE http://localhost:3000/api/series/id/1 HTTP/1.1
+
+
+###
+
+PUT http://localhost:3000/api/movies/id/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Hannibal",
+    "genre": "Horror",
+    "cover": "https://www.google.com/search?q=hannibal+movie&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiR3J6V3J3iAhXQrJ4KHV5eD8QQ_AUIEigB&biw=1366&bih=657#imgrc=",
+    "duration": "2h 11m",
+    "rating": 10
+
+}
+
+PATCH http://localhost:3000/api/movies/id/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/9b/Hannibal_movie_poster.jpg"
+}

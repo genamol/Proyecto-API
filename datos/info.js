@@ -2,7 +2,7 @@ let info = {
   series: [
     {
       id: 1,
-      name: "Breaking Bad",
+      title: "Breaking Bad",
       genre: "Drama",
       cover: "https://www.nexofin.com/archivos/2017/03/breaking-bad.jpg",
       seasons: 5,
@@ -11,7 +11,7 @@ let info = {
     },
     {
       id: 2,
-      name: "The Walking Dead",
+      title: "The Walking Dead",
       genre: "Horror",
       cover:
         "https://es.web.img3.acsta.net/c_310_420/medias/nmedia/18/78/35/82/20303823.jpg",
@@ -21,7 +21,7 @@ let info = {
     },
     {
       id: 3,
-      name: "Game of Thrones",
+      title: "Game of Thrones",
       genre: "Fantasy",
       cover:
         "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
@@ -31,7 +31,7 @@ let info = {
     },
     {
       id: 4,
-      name: "The Sopranos",
+      title: "The Sopranos",
       genre: "Drama",
       cover:
         "https://m.media-amazon.com/images/M/MV5BZTZkMWVkNTEtYzMxMC00MzQzLTg5NjUtNTNmN2M2NzEwNzI0XkEyXkFqcGdeQXVyMTY3MDE5MDY1._V1_.jpg",
@@ -41,7 +41,7 @@ let info = {
     },
     {
       id: 5,
-      name: "Prison Break",
+      title: "Prison Break",
       genre: "Action",
       cover:
         "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B661D1CF4B2D5C3EED3456C80726E412E5AF83F8C1C78A707F6D3AD27C56D67D/scale?width=1200&amp;aspectRatio=1.78&amp;format=webp",
@@ -51,7 +51,7 @@ let info = {
     },
     {
       id: 6,
-      name: "The Big Bang Theory",
+      title: "The Big Bang Theory",
       genre: "Comedy",
       cover:
         "https://www.formulatv.com/images/series/posters/100/185/dest_1.jpg",
@@ -64,7 +64,7 @@ let info = {
   movies: [
     {
       id: 1,
-      name: "The Godfather",
+      title: "The Godfather",
       genre: "Drama",
       cover:
         "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
@@ -73,7 +73,7 @@ let info = {
     },
     {
       id: 2,
-      name: "Fast & Furious",
+      title: "Fast & Furious",
       genre: "Action",
       cover:
         "https://http2.mlstatic.com/D_NQ_NP_638409-MLA51965851973_102022-O.webp",
@@ -82,7 +82,7 @@ let info = {
     },
     {
       id: 3,
-      name: "Harry Potter",
+      title: "Harry Potter",
       genre: "Fantasy",
       cover:
         "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/12/harry-potter-piedra-filosofal.jpg?tf=2048x",
@@ -91,7 +91,7 @@ let info = {
     },
     {
       id: 4,
-      name: "The Lord of the Rings",
+      title: "The Lord of the Rings",
       genre: "Fantasy",
       cover:
         "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
@@ -100,7 +100,7 @@ let info = {
     },
     {
       id: 5,
-      name: "The Matrix",
+      title: "The Matrix",
       genre: "Action",
       cover: "https://pics.filmaffinity.com/Matrix-155050517-large.jpg",
       duration: "2h 16min",
@@ -108,7 +108,7 @@ let info = {
     },
     {
       id: 6,
-      name: "Star Wars",
+      title: "Star Wars",
       genre: "Sci-Fi",
       cover:
         "https://static.wikia.nocookie.net/esstarwars/images/0/0f/Phantom_Menace_Soundtrack.jpg/revision/latest?cb=20090122212843",

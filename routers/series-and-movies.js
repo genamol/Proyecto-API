@@ -12,7 +12,7 @@ seriesAndMoviesRouter.get("/", (req, res) => {
   res.json(infoSeriesMovies);
 });
 
-seriesAndMoviesRouter.get("/:genre", (req, res) => {
+seriesAndMoviesRouter.get("/genre/:genre", (req, res) => {
   const genre = req.params.genre;
   const seriesResult = series.filter(
     (serie) => serie.genre.toLowerCase() === genre.toLowerCase()
