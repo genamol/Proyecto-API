@@ -1,6 +1,8 @@
-const express = require("express");
+import express from "express";
 
-const { series } = require("../datos/info.js").infoSeriesMovies;
+import { infoSeriesMovies } from "../datos/info.js";
+
+const { series } = infoSeriesMovies;
 
 const seriesRouter = express.Router();
 
@@ -87,4 +89,4 @@ seriesRouter.delete("/id/:id", (req, res) => {
   res.json(series);
 });
 
-module.exports = seriesRouter;
+export default seriesRouter;

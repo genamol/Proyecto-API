@@ -1,8 +1,8 @@
-const express = require("express");
+import express from "express";
 
-const { infoSeriesMovies } = require("../datos/info.js");
-const { series } = require("../datos/info.js").infoSeriesMovies;
-const { movies } = require("../datos/info.js").infoSeriesMovies;
+import { infoSeriesMovies } from "../datos/info.js";
+
+const { series, movies } = infoSeriesMovies;
 
 const seriesAndMoviesRouter = express.Router();
 
@@ -29,4 +29,4 @@ seriesAndMoviesRouter.get("/genre/:genre", (req, res) => {
   res.json({ series: seriesResult, movies: moviesResult });
 });
 
-module.exports = seriesAndMoviesRouter;
+export default seriesAndMoviesRouter;

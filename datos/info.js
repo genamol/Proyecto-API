@@ -1,4 +1,4 @@
-let info = {
+const info = {
   series: [
     {
       id: 1,
@@ -118,4 +118,4 @@ let info = {
   ],
 };
 
-module.exports.infoSeriesMovies = info;
+export const infoSeriesMovies = info;

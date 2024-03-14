@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
 const app = express();
 
-const { infoSeriesMovies } = require("./datos/info.js");
+// Middlewares
 
 app.get("/", (req, res) => {
   res.send(
@@ -10,13 +10,13 @@ app.get("/", (req, res) => {
 });
 
 // Routing
-const seriesAndMoviesRouter = require("./routers/series-and-movies.js");
+import seriesAndMoviesRouter from "./routers/series-and-movies.js";
 app.use("/api/", seriesAndMoviesRouter);
 
-const seriesRouter = require("./routers/series.js");
+import seriesRouter from "./routers/series.js";
 app.use("/api/series", seriesRouter);
 
-const moviesRouter = require("./routers/movies.js");
+import moviesRouter from "./routers/movies.js";
 app.use("/api/movies", moviesRouter);
 
 // Listen

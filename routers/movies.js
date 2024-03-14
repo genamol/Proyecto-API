@@ -1,6 +1,8 @@
-const express = require("express");
+import express from "express";
 
-const { movies } = require("../datos/info.js").infoSeriesMovies;
+import { infoSeriesMovies } from "../datos/info.js";
+
+const { movies } = infoSeriesMovies;
 
 const moviesRouter = express.Router();
 
@@ -84,4 +86,4 @@ moviesRouter.delete("/id/:id", (req, res) => {
   res.json(movies);
 });
 
-module.exports = moviesRouter;
+export default moviesRouter;
